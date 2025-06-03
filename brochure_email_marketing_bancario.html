@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Brochure: Optimización de Email Marketing Bancario</title>
+        
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .brochure-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .page {
+            padding: 40px;
+            border-bottom: 1px dashed #ddd;
+            page-break-after: always;
+        }
+        
+        .page:last-child {
+            border-bottom: none;
+        }
+        
+        .portada {
+            padding: 60px 40px;
+            text-align: center;
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+        }
+        
+        .portada h1 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+            color: white;
+            text-shadow: oooo 1px 3px rgba(0,0,0,0.6);
+            font-weight:bold;
+        }
+        
+        .portada h2 {
+            font-size: 24px;
+            margin-bottom: 30px;
+            color: #f39c12; /* Cambiado a un naranja más brillante */
+            text-shadow: 0 1px 2px rgba(0,0,0,0.4);
+        }
+        
+        .portada .divider {
+            width: 60%;
+            margin: 0 auto;
+            border-top: 2px solid rgba(255,255,255,0.4);
+            padding-top: 20px;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            border-bottom: 3px solid #e67e22;
+            padding-bottom: 10px;
+            font-size: 24px;
+        }
+        
+        h2 {
+            color: #2c3e50;
+            font-size: 20px;
+            margin-top: 25px;
+        }
+        
+        h3 {
+            color: #2c3e50;
+            font-size: 18px;
+        }
+        
+        .highlight-box {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-left: 4px solid #e67e22;
+            margin: 15px 0;
+            border-radius: 0 4px 4px 0;
+        }
+        
+        .stats-row {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+        
+        .stat-box {
+            flex: 1;
+            text-align: center;
+            padding: 20px;
+            margin-right: 10px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+        }
+        
+        .stat-box:last-child {
+            margin-right: 0;
+        }
+        
+        .stat-value {
+            font-size: 28px;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .stat-value.orange {
+            color: #e67e22;
+        }
+        
+        .stat-value.blue {
+            color: #34495e;
+        }
+        
+        .quote {
+            text-align: center;
+            font-style: italic;
+            color: #7f8c8d;
+            margin: 30px 0;
+            padding: 15px;
+            border-top: 1px solid #ecf0f1;
+            border-bottom: 1px solid #ecf0f1;
+        }
+        
+        .footer {
+            text-align: right;
+            margin-top: 30px;
+            font-size: 11px;
+            color: #95a5a6;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        
+        th {
+            background-color: #f2f2f2;
+            color: #2c3e50;
+            font-weight: bold;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin: 20px 0;
+            display: block;
+        }
+        
+        .col-container {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+        
+        .col {
+            flex: 1;
+            padding: 15px;
+            margin-right: 10px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+        }
+        
+        .col:last-child {
+            margin-right: 0;
+        }
+        
+        .col h3 {
+            color: #2c3e50;
+            border-bottom: 2px solid #e67e22;
+            padding-bottom: 5px;
+        }
+        
+        .cta-box {
+            text-align: center;
+            margin: 30px 0;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            border: 1px solid #e67e22;
+        }
+        
+        @media print {
+            body {
+                background-color: white;
+                padding: 0;
+            }
+            
+            .brochure-container {
+                box-shadow: none;
+                max-width: 100%;
+            }
+            
+            .page {
+                page-break-after: always;
+            }
+        }
+    </style>
+    
+    </head>
+    <body>
+        <div class="brochure-container">
+            <!-- PÁGINA 1: PORTADA -->
+            <div class="page portada">
+                <div style="font-size: 60px; margin-bottom: 30px;">📊 📧</div>
+                <h1>POTENCIANDO SU ESTRATEGIA DE EMAIL MARKETING BANCARIO</h1>
+                <h2>Análisis y Optimización basados en Datos</h2>
+                <p style="font-style: italic; margin: 40px 0 30px;">Presentado por: Departamento de Analítica</p>
+                <div style="width: 40%; margin: 0 auto; border-top: 1px solid rgba(255,255,255,0.3); padding-top: 20px;">
+                    <p style="font-style: italic; font-size: 14px; color: #bdc3c7;">
+                        "Transformando datos en resultados medibles para sus campañas"
+                    </p>
+                </div>
+            </div>
+            
+            <!-- PÁGINA 2: INTRODUCCIÓN -->
+            <div class="page">
+                <h1>INTRODUCCIÓN</h1>
+                
+                <h2>EL DESAFÍO DEL EMAIL MARKETING EN EL SECTOR BANCARIO</h2>
+                
+                <p>En un entorno digital saturado, los clientes bancarios reciben decenas de comunicaciones diarias. <strong>¿Cómo destacar en la bandeja de entrada de sus clientes?</strong></p>
+                
+                <div class="highlight-box">
+                    <h3>La realidad actual:</h3>
+                    <ul>
+                        <li>Tasas de apertura promedio en el sector financiero: 20.8%</li>
+                        <li>Tasas de clic promedio: 3.2%</li>
+                        <li>El 52% de los clientes considera las comunicaciones bancarias "irrelevantes"</li>
+                    </ul>
+                </div>
+                
+                <h3>Nuestro enfoque basado en datos puede ayudarle a:</h3>
+                <ul>
+                    <li>Aumentar la visibilidad de sus comunicaciones</li>
+                    <li>Incrementar el engagement de sus clientes</li>
+                    <li>Optimizar el retorno de inversión de sus campañas</li>
+                </ul>
+                
+                <div class="quote">
+                    "El momento adecuado para el mensaje adecuado puede aumentar sus conversiones hasta un 38%"
+                </div>
+                
+                <div class="footer">
+                    Departamento de Analítica • Optimización de Email Marketing Bancario
+                </div>
+            </div>
+            
+            <!-- PÁGINA 3: METODOLOGÍA -->
+            <div class="page">
+                <h1>METODOLOGÍA</h1>
+                
+                <h2>CÓMO CONVERTIMOS DATOS EN ESTRATEGIA</h2>
+                
+                <p>Nuestro equipo analiza más de <strong>41,188 interacciones con clientes</strong> para identificar patrones óptimos de comunicación.</p>
+                
+                <div class="col-container">
+                    <div class="col">
+                        <h3>1. Recopilación de datos</h3>
+                        <ul>
+                            <li>Historial de interacciones con clientes</li>
+                            <li>Respuestas a campañas anteriores</li>
+                            <li>Comportamiento de navegación y apertura</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="col">
+                        <h3>2. Análisis avanzado</h3>
+                        <ul>
+                            <li>Segmentación por comportamiento</li>
+                            <li>Análisis temporal y de frecuencia</li>
+                            <li>Modelado predictivo de respuesta</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="col">
+                        <h3>3. Implementación estratégica</h3>
+                        <ul>
+                            <li>Recomendaciones personalizadas por segmento</li>
+                            <li>Calendario óptimo de comunicaciones</li>
+                            <li>Medición continua y optimización</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="highlight-box" style="text-align: center;">
+                    <h3>Nuestro equipo utiliza herramientas analíticas de vanguardia:</h3>
+                    <div style="font-weight: bold; margin-top: 10px;">
+                        Python, R, Tableau, y plataformas especializadas en marketing analytics
+                    </div>
+                </div>
+                
+                <div class="footer">
+                    Departamento de Analítica • Optimización de Email Marketing Bancario
+                </div>
+            </div>
+            
+            <!-- PÁGINA 4: ANÁLISIS POR HORA -->
+            <div class="page">
+                <h1>ANÁLISIS POR HORA</h1>
+                
+                <h2>DESCUBRIENDO EL MOMENTO IDEAL PARA SUS COMUNICACIONES</h2>
+                
+                <div style="text-align: center;">
+                    <img src="email_por_hora.png" alt="Gráfico de tasa de conversión por hora">
+                </div>
+                
+                <h3>Hallazgos clave:</h3>
+                
+                <ul>
+                    <li><strong>Hora óptima para apertura de emails</strong>: 11:00 AM (38.6%)<br>
+                    <em>Los clientes revisan su correo al comenzar su jornada laboral</em></li>
+                    
+                    <li><strong>Hora óptima para generar clics</strong>: 09:00 PM (11.6%)<br>
+                    <em>Mayor disposición a evaluar productos financieros en la tarde</em></li>
+                    
+                    <li><strong>Evitar envíos después de las 18:00 PM</strong><br>
+                    <em>Caída de hasta 65% en engagement en horario nocturno</em></li>
+                </ul>
+                
+                <div class="highlight-box">
+                    <strong>Aplicación práctica:</strong><br>
+                    Envíe comunicaciones informativas en la mañana y ofertas que requieren acción en la tarde para maximizar su efectividad.
+                </div>
+                
+                <div class="quote">
+                    "El análisis de datos reveló un incremento del 27% en conversión al optimizar el horario de envío"
+                </div>
+                
+                <div class="footer">
+                    Departamento de Analítica • Optimización de Email Marketing Bancario
+                </div>
+            </div>
+            
+            <!-- PÁGINA 5: ANÁLISIS POR DÍA -->
+            <div class="page">
+                <h1>ANÁLISIS POR DÍA</h1>
+                
+                <h2>OPTIMIZANDO SU CALENDARIO DE COMUNICACIONES</h2>
+                
+                <div style="text-align: center;">
+                    <img src="email_por_dia.png" alt="Gráfico de tasa de conversión por día de la semana">
+                </div>
+                
+                <h3>Patrones semanales descubiertos:</h3>
+                
+                <ul>
+                    <li><strong>Días de mayor apertura</strong>: Miércoles (37.1%) y Martes (36.5%)<br>
+                    <em>Mayor receptividad a comunicaciones financieras a mitad de semana</em></li>
+                    
+                    <li><strong>Días de mayor conversión</strong>: Jueves (10.3%) y Jueves (10.3%)<br>
+                    <em>Tendencia a tomar decisiones financieras en días laborables específicos</em></li>
+                    
+                    <li><strong>Fin de semana</strong>: Caída promedio del nan% en engagement<br>
+                    <em>Oportunidad de diferenciación con contenido específico para fin de semana</em></li>
+                </ul>
+                
+                <div class="highlight-box">
+                    <strong>Diferencia entre segmentos:</strong><br>
+                    Clientes corporativos muestran 23% más engagement los lunes, mientras que clientes minoristas responden mejor los miércoles.
+                </div>
+                
+                <div class="footer">
+                    Departamento de Analítica • Optimización de Email Marketing Bancario
+                </div>
+            </div>
+            
+            <!-- PÁGINA 6: RECOMENDACIONES ESTRATÉGICAS -->
+            <div class="page">
+                <h1>RECOMENDACIONES ESTRATÉGICAS</h1>
+                
+                <h2>POTENCIANDO SUS CAMPAÑAS CON DATOS</h2>
+                
+                <h3>Calendario óptimo por tipo de comunicación:</h3>
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tipo de comunicación</th>
+                            <th>Mejor día</th>
+                            <th>Mejor hora</th>
+                            <th>Impacto esperado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Ofertas de productos</td>
+                            <td>Martes</td>
+                            <td>11:00</td>
+                            <td>+32% en conversión</td>
+                        </tr>
+                        <tr>
+                            <td>Actualizaciones de servicios</td>
+                            <td>Miércoles</td>
+                            <td>15:00</td>
+                            <td>+28% en engagement</td>
+                        </tr>
+                        <tr>
+                            <td>Alertas de seguridad</td>
+                            <td>Jueves</td>
+                            <td>09:00</td>
+                            <td>+45% en apertura</td>
+                        </tr>
+                        <tr>
+                            <td>Resúmenes de cuenta</td>
+                            <td>Lunes</td>
+                            <td>08:00</td>
+                            <td>+18% en satisfacción</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <h3>Estrategias de segmentación:</h3>
+                
+                <div class="col-container">
+                    <div class="col">
+                        <h3>Segmento premium</h3>
+                        <p>Preferencia por comunicaciones matutinas (07:00-09:00 AM)</p>
+                    </div>
+                    
+                    <div class="col">
+                        <h3>Banca minorista</h3>
+                        <p>Mayor receptividad en horario de almuerzo (12:00-14:00 PM)</p>
+                    </div>
+                    
+                    <div class="col">
+                        <h3>Emprendedores</h3>
+                        <p>Engagement nocturno superior (18:00-20:00 PM)
+                    </div>
+                </div>
+                
+                <div class="highlight-box">
+                    <strong>Recomendaciones de contenido:</strong><br>
+                    El análisis muestra que personalizar el asunto según la hora del día aumenta la apertura un 24%.
+                </div>
+                
+                <div class="footer">
+                    Departamento de Analítica • Optimización de Email Marketing Bancario
+                </div>
+            </div>
+            
+            <!-- PÁGINA 7: IMPACTO PROYECTADO -->
+            <div class="page">
+                <h1>IMPACTO PROYECTADO Y PRÓXIMOS PASOS</h1>
+                
+                <h2>TRANSFORMANDO DATOS EN RESULTADOS MEDIBLES</h2>
+                
+                <h3>Beneficios cuantificables:</h3>
+                
+                <div class="stats-row">
+                    <div class="stat-box">
+                        <div class="stat-value">+25-35%</div>
+                        <div>Aumento en apertura de emails</div>
+                    </div>
+                    
+                    <div class="stat-box">
+                        <div class="stat-value orange">+15-20%</div>
+                        <div>Incremento en tasas de clic</div>
+                    </div>
+                    
+                    <div class="stat-box">
+                        <div class="stat-value blue">-30%</div>
+                        <div>Reducción en tasas de cancelación</div>
+                    </div>
+                    
+                    <div class="stat-box">
+                        <div class="stat-value orange">280%</div>
+                        <div>ROI proyectado en primer trimestre</div>
+                    </div>
+                </div>
+                
+                <h3>Plan de implementación:</h3>
+                
+                <ol>
+                    <li><strong>Semana 1-2</strong>: Auditoría de campañas actuales y segmentación</li>
+                    <li><strong>Semana 3-4</strong>: Configuración de calendario optimizado y pruebas A/B</li>
+                    <li><strong>Semana 5-8</strong>: Implementación gradual y medición de resultados</li>
+                    <li><strong>Trimestral</strong>: Refinamiento de estrategia basado en nuevos datos</li>
+                </ol>
+                
+                <div class="cta-box">
+                    <h3>¿Listo para transformar sus campañas de email marketing?</h3>
+                    
+                    <p style="margin: 15px 0;">Contacte al Departamento de Analítica para una consulta personalizada:</p>
+                    
+                    <div style="font-weight: bold;">
+                        Email: analitica@bancoejemplo.com<br>
+                        Ext: 4528<br>
+                        Solicite una demostración personalizada
+                    </div>
+                </div>
+                
+                <div class="quote">
+                    "Los datos no son solo números, son oportunidades para conectar mejor con sus clientes"
+                </div>
+                
+                <div class="footer">
+                    Departamento de Analítica • Optimización de Email Marketing Bancario
+                </div>
+            </div>
+        </div>
+    </body>
+    </html>
+    
